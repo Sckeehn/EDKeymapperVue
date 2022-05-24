@@ -62,6 +62,7 @@ function uploadFile (event:any) {
       }
       settings.push(category)
     }
+    console.log(settings)
     cache.keybinds = settings
   }
   fr.readAsText(file)

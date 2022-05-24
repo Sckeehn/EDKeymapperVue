@@ -1,0 +1,5 @@
+@for $var from 1vw to 11vw {
+   .lm-#{$var}{
+      margin-left: #{$var} !important;
+   }
+}
