@@ -1,0 +1,470 @@
+@font-face {
+		font-family: eurostyle;
+		src: url(EurostileBold.ttf);
+}
+*{
+	font-family: eurostyle;
+	color:white;
+	background-color: #000000;
+	text-align: center;
+}
+html, body{
+	margin: 0vh;
+	z-index: 1;
+}
+select{
+	background-color:black;
+}
+#cursorFollow{
+	height:2em;
+	z-index: 100;
+	background-color: black;
+	position: absolute;
+	display: none;
+	pointer-events: none;
+	border: 2px solid #FF8C0D;
+	border-radius: 3px;
+}
+/* .kbswitch ~ #cursorFollow{
+	display:inline;
+} */
+.navbar{
+	grid-area: navbar;
+	background-color: #1e1e1e;
+	height: 5vh;
+}
+.deadZoneSliderTextBox{
+	background-color: black;
+}
+#left_bar{
+	grid-area: left_bar;
+	background-color: #321A00;
+	height: 95vh;
+	width: 20vw;
+	overflow:auto;
+}
+#select{
+	background-color:darkslategray;
+}
+.keyboard_container{
+	grid-area: keyboard_container;
+	background-color: #000000;
+	height: 95vh;
+	width: 80vw;
+	text-align: center;
+}
+#getStarted{
+	font-size: 3em;
+}
+#buttonSmoosher{
+	margin-top: 15%;
+}
+#fileSelectButton{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+#fileSelectButton + label{
+	color: #FF8C0D;
+	font-size: 3em;
+	padding: 1% 5%;
+	border: 2px solid #FF8C0D;
+	border-radius: 5px;
+	background-color: #321A00;
+}
+#fileSelectButton + label:hover{
+	background-color: #FF8C0D;
+	color: #321A00;
+}
+#uploadButton{
+	/* width: 20%; */
+	padding: 1% 5%;
+	background-color: #321A00;
+	border-color: #FF8C0D;
+	color: #FF8C0D;
+	font-size: 3em;
+	border-radius: 5px;
+	margin-top: 5%;
+}
+#uploadButton:hover{
+	background-color: #FF8C0D;
+	color: #321A00;
+}
+.grid_container{
+	display: grid;
+	grid-template-areas:
+		'navbar navbar'
+		'left_bar keyboard_container ';
+		margin: 0vh;
+}
+.title{
+	color: #FF8C0D;
+	line-height: 0em;
+	margin-left: 10px;
+	font-family: eurostyle;
+	text-align: left;
+}
+.kbswitch{
+	background-color: #321A00;
+	height: 2vw;
+	line-height: 2em;
+	border: 2px solid #FF8C0D;
+	border-radius: 3px;
+	font-family: eurostyle;
+	font-size: .7em;
+}
+.kbswitch:hover{
+	background-color: #FF8C0D;
+}
+#esc{
+	grid-area: esc;
+}
+#f1{
+	grid-area: f1;
+}
+#f2{
+	grid-area: f2;
+}
+#f3{
+	grid-area: f3;
+}
+#f4{
+	grid-area: f4;
+}
+#f5{
+	grid-area: f5;
+}
+#f6{
+	grid-area: f6;
+}
+#f7{
+	grid-area: f7;
+}
+#f8{
+	grid-area: f8;
+}
+#f9{
+	grid-area: f9;
+}
+#f10{
+	grid-area: f10;
+}
+#f11{
+	grid-area: f11;
+}
+#f12{
+	grid-area: f12;
+}
+#prtsc{
+	grid-area: prtsc;
+}
+#scrolllock{
+	grid-area: scrolllock;
+}
+#pause{
+	grid-area: pause;
+}
+#grave{
+	grid-area: tilde;
+}
+#one{
+	grid-area: one;
+}
+#two{
+	grid-area: two;
+}
+#three{
+	grid-area: three;
+}
+#four{
+	grid-area: four;
+}
+#five{
+	grid-area: five;
+}
+#six{
+	grid-area: six;
+}
+#seven{
+	grid-area: seven;
+}
+#eight{
+	grid-area: eight;
+}
+#nine{
+	grid-area: nine;
+}
+#zero{
+	grid-area: zero;
+}
+#minus{
+	grid-area: hyphen;
+}
+#equals{
+	grid-area: equal;
+}
+#backspace{
+	grid-area: backspace;
+}
+#insert{
+	grid-area: insert;
+}
+#home{
+	grid-area: home;
+}
+#pageup{
+	grid-area: pageup;
+}
+#numlock{
+	grid-area: numlock;
+}
+#numpad_slash{
+	grid-area: numpad_slash;
+}
+#numpad_multiply{
+	grid-area: numpad_mult;
+}
+#numpad_minus{
+	grid-area: numpad_hyphen;
+}
+#tab{
+	grid-area: tab;
+}
+#q{
+	grid-area: q;
+}
+#w{
+	grid-area: w;
+}
+#e{
+	grid-area: e;
+}
+#r{
+	grid-area: r;
+}
+#t{
+	grid-area: t;
+}
+#y{
+	grid-area: y;
+}
+#u{
+	grid-area: u;
+}
+#i{
+	grid-area: i;
+}
+#o{
+	grid-area: o;
+}
+#p{
+	grid-area: p;
+}
+#leftbracket{
+	grid-area: leftBracket;
+}
+#rightbracket{
+	grid-area: rightBracket;
+}
+#backslash{
+	grid-area: backslash;
+}
+#delete{
+	grid-area: del;
+}
+#end{
+	grid-area: end;
+}
+#pagedown{
+	grid-area: pagedown;
+}
+#numpad_7{
+	grid-area: numpad_7;
+}
+#numpad_8{
+	grid-area: numpad_8
+}
+#numpad_9{
+	grid-area: numpad_9;
+}
+#plus{
+	grid-area: plus;
+	height: 4.6vw;
+}
+#caps{
+	grid-area: caps;
+}
+#a{
+	grid-area: a;
+}
+#s{
+	grid-area: s;
+}
+#d{
+	grid-area: d;
+}
+#f{
+	grid-area: f;
+}
+#g{
+	grid-area: g;
+}
+#h{
+	grid-area: h;
+}
+#j{
+	grid-area: j;
+}
+#k{
+	grid-area: k;
+}
+#l{
+	grid-area: l;
+}
+#colon{
+	grid-area: colon;
+}
+#apostrophe{
+	grid-area: apostrophe;
+}
+#enter{
+	grid-area: enter;
+}
+#numpad_4{
+	grid-area: numpad_4;
+}
+#numpad_5{
+	grid-area: numpad_5;
+}
+#numpad_6{
+	grid-area: numpad_6;
+}
+#leftshift{
+	grid-area: leftShift;
+}
+#z{
+	grid-area: z;
+}
+#x{
+	grid-area: x;
+}
+#c{
+	grid-area: c;
+}
+#v{
+	grid-area: v;
+}
+#b{
+	grid-area: b;
+}
+#n{
+	grid-area: n;
+}
+#m{
+	grid-area: m;
+}
+#lessthan{
+	grid-area: comma;
+}
+#greaterthan{
+	grid-area: period;
+}
+#slash{
+	grid-area: slash;
+}
+#rightshift{
+	grid-area: rightShift;
+}
+#uparrow{
+	grid-area: upArrow;
+}
+#numpad_1{
+	grid-area: numpad_1;
+}
+#numpad_2{
+	grid-area: numpad_2;
+}
+#numpad_3{
+	grid-area: numpad_3;
+}
+#numpad_enter{
+	grid-area: numpad_Enter;
+	height: 4.6vw;
+}
+#leftcontrol{
+	grid-area: leftCtrl;
+}
+#leftwin{
+	grid-area: leftWin;
+}
+#leftalt{
+	grid-area: leftAlt
+}
+#space{
+	grid-area: space;
+}
+#rightalt{
+	grid-area: rightAlt;
+}
+#rightwin{
+	grid-area: rightWin;
+}
+#fn{
+	grid-area: fn;
+}
+#rightcontrol{
+	grid-area: rightCtrl;
+}
+#leftarrow{
+	grid-area: leftArrow;
+}
+#downarrow{
+	grid-area: downArrow;
+}
+#rightarrow{
+	grid-area: rightArrow;
+}
+#numpad_0{
+	grid-area: numpad_0;
+}
+#numpad_period{
+	grid-area: numpad_period;
+}
+
+
+.kbMini{
+	display: grid;
+	grid-template-columns: repeat(24, minmax(0, 1fr));
+	grid-template-areas:
+		'esc . f1 f2 f3 f4 . f5 f6 f7 f8 . f9 f10 f11 f12 prtsc scrolllock pause . . . . .'
+		'tilde one two three four five six seven eight nine zero hyphen equal backspace backspace . insert home pageup . numlock numpad_slash numpad_mult numpad_hyphen'
+		'tab tab q w e r t y u i o p leftBracket rightBracket backslash . del end pagedown . numpad_7 numpad_8 numpad_9 plus'
+		'caps caps a s d f g h j k l colon apostrophe enter enter . . . . . numpad_4 numpad_5 numpad_6 plus'
+		'leftShift leftShift z x c v b n m comma period slash rightShift rightShift . . . upArrow . . numpad_1 numpad_2 numpad_3 numpad_Enter'
+		'. . leftCtrl leftWin leftAlt space space space space space rightAlt rightWin fn rightCtrl . . leftArrow downArrow rightArrow . numpad_0 numpad_0 numpad_period numpad_Enter';
+	color:white;
+	text-align: center;
+	margin:100px;
+	grid-gap:10px;
+}
+.controls{
+	border: 2px solid #FF8C0D;
+	color:white;
+	/* height:4em; */
+}
+.controls:hover{
+	background-color: #FF8C0D;
+}
+#preset{
+	background-color: #1e1e1e;
+	appearance:none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-family: eurostyle;
+}
+option{
+	font-family:eurostyle;
+}
