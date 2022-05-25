@@ -81,15 +81,15 @@ function modify(event: any) {
 <template>
   <h1>{{ msg }}</h1>
   <select id="preset" @change="changeShown">
-    <option v-for="(content, i) in Settings" :value="i">
+    <option v-for="(content, i) in Settings" :key="i" :value="i">
       {{ content.name }}
     </option>
   </select>
   <h1>{{ Settings[selection.value].name }}</h1>
-  <div id="test" v-for="item in selection.settings">
+  <div id="test" v-for="item in selection.settings" :key="item.name">
     <h3>{{ item.name }}</h3>
     <div v-if="item.action.length > 0">
-      <div v-for="action in item.action">
+      <div v-for="action in item.action" :key="action.name">
         <input
           v-if="action.getType() == 'Bind'"
           type="text"
@@ -121,7 +121,6 @@ function modify(event: any) {
           v-else-if="action.getType() == 'Toggle'"
           type="checkbox"
           :name="item.name + '.' + action.getName()"
-          v-model="action.val"
         />
         <select
           v-else-if="action.getType() == 'Dropdown'"
@@ -132,7 +131,7 @@ function modify(event: any) {
           <option :value="action.getValue()">
             {{ action.getValue() }}
           </option>
-          <option v-for="x in Weirdos.get(item.name)" :value="x">
+          <option v-for="x in Weirdos.get(item.name)" :key="x" :value="x">
             {{ x }}
           </option>
         </select>
@@ -140,9 +139,9 @@ function modify(event: any) {
       </div>
     </div>
     <div v-if="item.section.length > 0">
-      <div v-for="subkeybind in item.section">
+      <div v-for="subkeybind in item.section" :key="subkeybind.name">
         <label>{{ subkeybind.name }}</label>
-        <div v-for="action in subkeybind.action">
+        <div v-for="action in subkeybind.action" :key="action.name">
           <input
             v-if="action.getType() == 'Bind'"
             type="text"
@@ -176,7 +175,6 @@ function modify(event: any) {
             v-else-if="action.getType() == 'Toggle'"
             type="checkbox"
             :name="item.name + '.' + subkeybind.name + '.' + action.getName()"
-            v-model="action.val"
             @change="modify"
           />
           <select
@@ -188,7 +186,7 @@ function modify(event: any) {
             <option :value="action.getValue()">
               {{ action.getValue() }}
             </option>
-            <option v-for="x in Weirdos.get(item.name)" :value="x">
+            <option v-for="x in Weirdos.get(item.name)" :value="x" :key="x">
               {{ x }}
             </option>
           </select>

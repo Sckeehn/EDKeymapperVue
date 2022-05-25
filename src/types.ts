@@ -11,10 +11,7 @@ export const state = reactive({
     current: 'home',
 })
 
-export const cache = reactive({
-    keybinds: [],
-    layout: ""
-})
+
 
 const SliderMap:Map<string,number[]> = new Map([
     ['MouseSensitivity',[.1,10]],
@@ -51,6 +48,11 @@ export class Keybinds{
         this.section.push(section)
     }
 }
+
+export const cache = reactive({
+    keybinds: [] as Keybinds[],
+    layout: ""
+})
 
 export class Action{
     name:string=""
