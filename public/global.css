@@ -1,0 +1,174 @@
+@font-face {
+  font-family: eurostyle;
+  src: url(EurostileBold.ttf);
+}
+
+* {
+  font-family: eurostyle;
+  color: white;
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+select {
+  background-color: #1e1e1e;
+}
+
+input {
+  background-color: #1e1e1e;
+}
+
+#app {
+  height: auto;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #1e1e1e;
+  height: 5vh;
+  text-align: center;
+}
+
+#fileSelectButton {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#left_bar {
+  grid-area: left_bar;
+  background-color: #321A00;
+  height: 95vh;
+  width: 20vw;
+  overflow: auto;
+  padding-left: 1%;
+}
+
+#getStarted {
+  font-size: 2em;
+  text-align: center;
+  height: auto;
+  line-height: 3em;
+}
+
+#savior {
+  border: 2px solid #FF8C0D;
+  background-color: #321A00;
+  border-radius: 5px;
+  font-size: 2em;
+  padding: .5%;
+}
+
+#bigWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (16px)[90];
+      grid-template-columns: repeat(90, 16px);
+  -ms-grid-rows: (64px)[6];
+      grid-template-rows: repeat(6, 64px);
+  grid-column-gap: 0px;
+  grid-row-gap: 16px;
+}
+
+#biggestWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.keyWrapper {
+  display: contents;
+}
+
+.gap {
+  grid-column: auto / span 1;
+}
+
+.doubleGap {
+  grid-column: auto / span 2;
+}
+
+.tripleGap {
+  grid-column: auto / span 3;
+}
+
+.fiveGap {
+  grid-column: auto / span 5;
+}
+
+.sixGap {
+  grid-column: auto / span 6;
+}
+
+.enterGap {
+  grid-column: auto / span 15;
+}
+
+.upArrowGap {
+  grid-column: auto / span 6;
+}
+
+.rCtrlGap {
+  grid-column: auto / span 8;
+}
+
+.rShiftGap {
+  grid-column: auto / span 7;
+}
+
+.keyWidth1 {
+  grid-column: auto/span 4;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidth2 {
+  grid-column: auto/span 5;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidth3 {
+  grid-column: auto/span 6;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidth4 {
+  grid-column: auto/span 7;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidth5 {
+  grid-column: auto/span 8;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidth6 {
+  grid-column: auto/span 9;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidthEnter {
+  grid-column: auto / span 10;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidth7 {
+  grid-column: auto/span 11;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidthRightShift {
+  grid-column: auto / span 12;
+  border: 2px solid #FF8C0D;
+}
+
+.keyWidth8 {
+  grid-column: auto/span 25;
+  border: 2px solid #FF8C0D;
+}
+/*# sourceMappingURL=global.css.map */

@@ -1,5 +1,163 @@
-@for $var from 1vw to 11vw {
-   .lm-#{$var}{
-      margin-left: #{$var} !important;
-   }
+$buttonSelected:  #FF8C0D;
+$buttonUnselected: #321A00;
+$black: black;
+$bgGrey: #1e1e1e;
+$primaryText: white;
+$borderWidth: 2px;
+$borderType: solid;
+$borderRadius: 5px;
+
+@font-face {
+   font-family: eurostyle;
+   src: url(EurostileBold.ttf)
 }
+
+*{
+   font-family: eurostyle;
+   color: $primaryText;
+   margin: 0px;
+}
+body {
+   background-color: $black;
+}
+select {
+   background-color: $bgGrey;
+}
+input {
+   background-color: $bgGrey;
+}
+
+#app {
+   height: auto;
+}
+.navbar{
+	grid-area: navbar;
+	background-color: $bgGrey;
+	height: 5vh;
+   text-align: center;
+}
+#fileSelectButton{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+#left_bar{
+	grid-area: left_bar;
+	background-color: $buttonUnselected;
+	height: 95vh;
+	width: 20vw;
+	overflow:auto;
+   padding-left: 1%;
+}
+#getStarted{
+	font-size: 2em;
+   text-align: center;
+   height: auto;
+   line-height: 3em;
+}
+#savior {
+   border: $borderWidth $borderType $buttonSelected;
+   background-color: $buttonUnselected;
+   border-radius: $borderRadius;
+   font-size: 2em;
+   padding: .5%;
+}
+
+
+$keySize: 64px;
+#bigWrapper {
+   display: grid;
+   grid-template-columns: repeat(90, $keySize/4);
+   grid-template-rows: repeat(6, $keySize);
+   grid-column-gap: 0px;
+   grid-row-gap: $keySize/4;
+}
+#biggestWrapper{
+   display:flex
+}
+.keyWrapper{
+   display: contents;
+}
+.gap{
+   grid-column: auto / span 1;
+}
+.doubleGap{
+   grid-column: auto / span 2;
+}
+.tripleGap{
+   grid-column: auto / span 3;
+}
+.fiveGap{
+   grid-column: auto / span 5;
+}
+.sixGap{
+   grid-column: auto / span 6;
+}
+.enterGap{
+   grid-column: auto / span 15;
+}
+.upArrowGap{
+   grid-column: auto / span 6;
+}
+.rCtrlGap{
+   grid-column: auto / span 8;
+}
+.rShiftGap{
+   grid-column: auto / span 7;
+}
+.keyWidth1 {
+   grid-column: auto/span 4;
+   border: $borderWidth $borderType $buttonSelected
+ }
+ 
+ .keyWidth2 {
+   grid-column: auto/span 5;
+   border: $borderWidth $borderType $buttonSelected
+
+ }
+ 
+ .keyWidth3 {
+   grid-column: auto/span 6;
+   border: $borderWidth $borderType $buttonSelected
+
+ }
+ 
+ .keyWidth4 {
+   grid-column: auto/span 7;
+   border: $borderWidth $borderType $buttonSelected
+
+ }
+ 
+ .keyWidth5 {
+   grid-column: auto/span 8;
+   border: $borderWidth $borderType $buttonSelected
+
+ }
+ 
+ .keyWidth6 {
+   grid-column: auto/span 9;
+   border: $borderWidth $borderType $buttonSelected
+
+ }
+ .keyWidthEnter{
+    grid-column: auto / span 10;
+    border: $borderWidth $borderType $buttonSelected
+ }
+ .keyWidth7 {
+   grid-column: auto/span 11;
+   border: $borderWidth $borderType $buttonSelected
+
+ }
+ .keyWidthRightShift{
+    grid-column: auto / span 12;
+    border: $borderWidth $borderType $buttonSelected
+ }
+
+ .keyWidth8 {
+   grid-column: auto/span 25;
+   border: $borderWidth $borderType $buttonSelected
+
+ }

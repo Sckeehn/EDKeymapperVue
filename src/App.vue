@@ -7,16 +7,22 @@ import Editor from './components/Editor.vue'
 
 import { provide, inject } from 'vue'
 import { state,store } from './types'
+import USKeyboard from './components/USKeyboard.vue'
 
 </script>
 <template>
-  <div>Current State: {{ state.current }}</div>
-  <div v-show="state.current =='home'">
-    <Upload msg='i hate my life'/>
+  <div class="navbar">Current State: {{ state.current }}</div>
+  <div v-show="state.current =='home'" id="getStarted">
+    <Upload msg='Elite Dangerous Keyap Wizard'/>
   </div>
-  <div v-show="state.current == 'uploaded'">
-    <Editor msg='fuckles' />
-  </div>
+    <div v-show="state.current == 'uploaded'" id="biggestWrapper">
+      <div id="left_bar">
+      <Editor msg='fuckles' />
+      </div>
+        <div id="bigWrapper">
+        <USKeyboard msg='AAAAAAAAAA' />
+        </div>
+    </div>
 </template>
 
 <style>

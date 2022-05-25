@@ -6,10 +6,9 @@
 	font-family: eurostyle;
 	color:white;
 	background-color: #000000;
-	text-align: center;
 }
 html, body{
-	margin: 0vh;
+
 	z-index: 1;
 }
 select{
