@@ -8,7 +8,7 @@ import { provide, inject } from 'vue'
 import { state,store } from './types'
 import USKeyboard from './components/USKeyboard.vue'
 import Numpad from './components/Numpad.vue'
-
+import mouseControls from './components/mouseControls.vue'
 
 </script>
 <template>
@@ -26,6 +26,7 @@ import Numpad from './components/Numpad.vue'
         <div id="numWrapper">
         <Numpad msg=''/>
         </div>
+        <mouseControls msg=""/>
     </div>
 </template>
 

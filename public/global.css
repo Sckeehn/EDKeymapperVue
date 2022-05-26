@@ -223,4 +223,84 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.mouseWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  height: 300px;
+  width: 300px;
+}
+
+#mouseBox1 {
+  height: 100px;
+}
+
+#mouseBox2 {
+  height: 100px;
+}
+
+#mouseBox3 {
+  height: 100px;
+}
+
+#mouseBox4 {
+  height: 100px;
+}
+
+#mouseBox5 {
+  height: 100px;
+}
+
+#mouseBox6 {
+  height: 100px;
+}
+
+#mouseBox7 {
+  height: 100px;
+}
+
+#mouseBox8 {
+  height: 100px;
+}
+
+#mouseBox9 {
+  height: 100px;
+}
+
+#mouse {
+  width: auto;
+  height: 100%;
+}
+
+#arrowUp {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+#arrowLeft {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+#arrowRight {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+#arrowDown {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
 /*# sourceMappingURL=global.css.map */

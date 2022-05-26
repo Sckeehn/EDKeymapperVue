@@ -117,3 +117,44 @@ $keySize: 2.5vw;
    height: 100%;
    justify-content: center;
 }
+.mouseWrapper{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   height:300px;
+   width:300px;
+}
+@for $i from 1 to 10{
+   #mouseBox#{$i}{
+      height:100px;
+   }
+
+}
+#mouse{
+   width: auto;
+   height:100%;
+}
+#arrowUp{
+   width: auto;
+   height:100%;
+   margin:auto;
+   display:block;
+}
+#arrowLeft{
+   width: auto;
+   height:100%;
+   margin:auto;
+   display:block;
+}
+#arrowRight{
+   width: auto;
+   height:100%;
+   margin:auto;
+   display:block;
+}
+#arrowDown{
+   width: auto;
+   height:100%;
+   margin:auto;
+   display:block;
+}
