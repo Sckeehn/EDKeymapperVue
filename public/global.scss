@@ -231,3 +231,18 @@ $boxHeight: 4vw;
    transform: translate(33px, -177px) scale(36%, 36%);
    cursor:pointer;
 }
+#leftClick{
+   transform: translate(15px, -178px);
+   position: absolute;
+   cursor: pointer;
+}
+#middleClick{
+   transform: translate(83px, -167px);
+   position: absolute;
+   cursor: pointer;
+}
+#rightClick{
+   transform: translate(103px, -172px);
+   position: absolute;
+   cursor: pointer;
+}

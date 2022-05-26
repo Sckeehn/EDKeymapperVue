@@ -39,6 +39,9 @@ function unhoverKey(event:any){
             <img src="RyansMagnumOpus.png" id="mouse">
             <img src="scrollup.png" id="scrollup">
             <img src="scrolldown.png" id="scrolldown">
+            <img src="leftClick.png" id="leftClick">
+            <img src="middleClick.png" id="middleClick">
+            <img src="rightClick.png" id="rightClick">
         </div>
         <div id="mouseBox6">
             <img src="RightArrow.png" id="arrowRight"/>

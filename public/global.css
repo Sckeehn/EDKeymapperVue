@@ -370,4 +370,25 @@ input {
           transform: translate(33px, -177px) scale(36%, 36%);
   cursor: pointer;
 }
+
+#leftClick {
+  -webkit-transform: translate(15px, -178px);
+          transform: translate(15px, -178px);
+  position: absolute;
+  cursor: pointer;
+}
+
+#middleClick {
+  -webkit-transform: translate(83px, -167px);
+          transform: translate(83px, -167px);
+  position: absolute;
+  cursor: pointer;
+}
+
+#rightClick {
+  -webkit-transform: translate(103px, -172px);
+          transform: translate(103px, -172px);
+  position: absolute;
+  cursor: pointer;
+}
 /*# sourceMappingURL=global.css.map */
