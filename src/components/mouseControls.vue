@@ -37,6 +37,8 @@ function unhoverKey(event:any){
         </div>
         <div id="mouseBox5">
             <img src="RyansMagnumOpus.png" id="mouse">
+            <img src="scrollup.png" id="scrollup">
+            <img src="scrolldown.png" id="scrolldown">
         </div>
         <div id="mouseBox6">
             <img src="RightArrow.png" id="arrowRight"/>
@@ -49,6 +51,13 @@ function unhoverKey(event:any){
         </div>
         <div id="mouseBox9">
         
+        </div>
+        <div id="mouseControlList">
+            Left Mouse:
+            Right Mouse:
+            Scroll Up:
+            Middle Click:
+            Scroll Down:
         </div>
     </div>
 </template>

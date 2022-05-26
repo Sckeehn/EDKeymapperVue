@@ -26,7 +26,9 @@ import mouseControls from './components/mouseControls.vue'
         <div id="numWrapper">
         <Numpad msg=''/>
         </div>
+        <div id="mouseWrapper">
         <mouseControls msg=""/>
+        </div>
     </div>
 </template>
 

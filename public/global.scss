@@ -33,7 +33,7 @@ input {
 .navbar{
 	grid-area: navbar;
 	background-color: $bgGrey;
-	height: 5vh;
+	height: 6vh;
    text-align: center;
 }
 #fileSelectButton{
@@ -45,7 +45,8 @@ input {
 	z-index: -1;
 }
 #left_bar{
-	grid-area: left_bar;
+	grid-row: 1 / span 2;
+   grid-column: 1 / 1;
 	background-color: $buttonUnselected;
 	height: 95vh;
 	width: 20vw;
@@ -76,7 +77,9 @@ $keySize: 2.5vw;
    grid-row-gap: $keySize/4;
 }
 #biggestWrapper{
-   display:flex
+   display:grid;
+   grid-template-rows: [first] 40vh [second] 54vh;
+   grid-template-columns: repeat(3, 1fr);
 }
 .TKLkeyWrapper{
    display: contents;
@@ -118,43 +121,113 @@ $keySize: 2.5vw;
    justify-content: center;
 }
 .mouseWrapper{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-row: 2;
+   grid-column: 2;
+   display: inline-grid;
+   grid-template-columns: repeat(5, 1fr);
    grid-template-rows: repeat(3, 1fr);
-   height:300px;
-   width:300px;
+   height:200px;
+   width:500px;
 }
-@for $i from 1 to 10{
-   #mouseBox#{$i}{
-      height:100px;
-   }
+#mouseBox1{
+   grid-row: 1;
+   grid-column: 1;
 
 }
+#mouseBox2{
+   grid-row: 1;
+   grid-column: 2;
+
+}
+#mouseBox3{
+   grid-row: 1;
+   grid-column: 3;
+
+}
+#mouseBox4{
+   grid-row: 2;
+   grid-column: 1;
+
+}
+#mouseBox5{
+   grid-row: 2;
+   grid-column: 2;
+
+}
+#mouseBox6{
+   grid-row: 2;
+   grid-column: 3;
+
+}
+#mouseBox7{
+   grid-row: 3;
+   grid-column: 1;
+
+}
+#mouseBox8{
+   grid-row: 3;
+   grid-column: 2;
+
+}
+#mouseBox9{
+   grid-row: 3;
+   grid-column: 3;
+
+}
+
+
+
+
+$boxHeight: 4vw;
 #mouse{
    width: auto;
    height:100%;
+   margin: auto;
+   display:block;
 }
 #arrowUp{
    width: auto;
-   height:100%;
+   height:$boxHeight;
    margin:auto;
    display:block;
+   cursor:pointer;
 }
 #arrowLeft{
    width: auto;
-   height:100%;
+   height:$boxHeight;
    margin:auto;
    display:block;
+   cursor:pointer;
+   margin-top:100%;
 }
 #arrowRight{
    width: auto;
-   height:100%;
+   height:$boxHeight;
    margin:auto;
    display:block;
+   cursor:pointer;
+   margin-top:100%;
 }
 #arrowDown{
    width: auto;
-   height:100%;
+   height:$boxHeight;
    margin:auto;
    display:block;
+   cursor:pointer;
+}
+#mouseControlList{
+   grid-row: 2;
+   grid-column: 4;
+
+}
+
+#scrollup{
+   position: absolute;
+   transform:translate(56px, -235px) scale(45%, 45%);
+   cursor:pointer;
+}
+#scrolldown{
+   position: absolute;
+   transform: translate(33px, -177px) scale(36%, 36%);
+   cursor:pointer;
 }
