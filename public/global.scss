@@ -67,7 +67,7 @@ input {
 }
 
 
-$keySize: 3.5vw;
+$keySize: 2.5vw;
 #bigWrapper {
    display: grid;
    grid-template-columns: repeat(90, $keySize/4);
@@ -78,7 +78,7 @@ $keySize: 3.5vw;
 #biggestWrapper{
    display:flex
 }
-.keyWrapper{
+.TKLkeyWrapper{
    display: contents;
 }
 
@@ -92,10 +92,28 @@ $keySize: 3.5vw;
    border: $borderWidth $borderType $buttonSelected;
    padding-left: .25em;
    padding-top: .25em;
-   font-size: 1vw;
+   font-size: .75vw;
    background-color: $buttonUnselected;
    cursor: pointer;
 }
 .keyBorder:active {
    background-color: $buttonSelected;
+}
+#numWrapper {
+   display: grid;
+   grid-template-columns: repeat(20, $keySize/4);
+   grid-template-rows: repeat(6, $keySize);
+   grid-column-gap: 0px;
+   grid-row-gap: $keySize/4;
+   margin-left: 1vw;
+}
+
+.numkeyWrapper{
+   display: contents;
+}
+.tallboy{
+   grid-column: auto / span 4;
+   grid-row: auto / span 2;
+   height: 100%;
+   justify-content: center;
 }
