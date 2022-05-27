@@ -2,6 +2,7 @@
 import { inject, reactive, onUpdated } from "vue";
 import { cache, state, Keybinds, Action } from "../types";
 import { Settings, Weirdos } from "../ControlsList";
+import { selection, keys, Key } from "../keyboardMaps"
 
 defineProps<{ msg: string }>();
 
@@ -21,11 +22,6 @@ function getFrom(lst: string[]) {
   return working;
 }
 
-const selection = reactive({
-  value: 0,
-  settings: [] as Keybinds[],
-});
-
 function changeShown(event: any) {
   selection.value = parseInt(event.target.value);
   var working: Keybinds[] = [];
@@ -33,11 +29,56 @@ function changeShown(event: any) {
   for (const x in first) {
     for (const y in cache.keybinds) {
       if (first[x] == cache.keybinds[y].name) {
-        working.push(cache.keybinds[y]);
+        working.push(cache.keybinds[y])
       }
     }
   }
   selection.settings = working;
+  console.log(selection.settings)
+  for(let item of selection.settings){
+    console.log(item)
+      if(item.section.length > 0){
+        console.log("idiot")
+        //subkeybinds go here
+        item.section[1].action[0].val
+        if(keys.usLayout.has(item.section[0].action[0].val)){
+          if(keys.usLayout.get(item.section[0].action[0].val)?.coord !== undefined){
+            var tempSubArray = keys.usLayout.get(item.section[0].action[0].val)?.coord
+          }
+
+          if(tempSubArray?.length == 4){
+            tempSubArray[4] = 1
+          }
+          var tempSubArray2 = {
+            name: String(keys.usLayout.get(item.section[0].action[0].val)?.name),
+            coord: tempArray as number[]
+          }
+          keys.usLayout.set(item.section[0].action[0].val, tempSubArray2)
+        }
+      }
+      else{
+        console.log(item.action[0].val)
+        if(keys.usLayout.has(item.action[0].val)){
+          console.log("Tit")
+          if(keys.usLayout.get(item.action[0].val)?.coord !== undefined){
+              var tempArray = keys.usLayout.get(item.action[0].val)?.coord
+          }
+          
+          if(tempArray?.length == 4){
+            tempArray[4] = 1
+            console.log("QUACK")
+          }
+          else{
+            console.log("YOU FUCKED UP")
+          }
+          var tempArray2 = {
+            name: String(keys.usLayout.get(item.action[0].val)?.name), 
+            coord: tempArray as number[]
+          }
+          keys.usLayout.set(item.action[0].val, tempArray2 )
+        }
+      }
+  }
 }
 
 function modify(event: any) {
