@@ -91,7 +91,7 @@ function modify(event: any) {
     <div v-if="item.action.length > 0">
       <div v-for="action in item.action" :key="action.name">
         <input
-          v-if="action.getType() == 'Bind'"
+          v-if="action.getType().includes('Bind')"
           type="text"
           :name="item.name + '.' + action.getName()"
           :value="action.getValue()"
@@ -143,7 +143,7 @@ function modify(event: any) {
         <label>{{ subkeybind.name }}</label>
         <div v-for="action in subkeybind.action" :key="action.name">
           <input
-            v-if="action.getType() == 'Bind'"
+            v-if="action.getType().includes('Bind')"
             type="text"
             :name="item.name + '.' + subkeybind.name + '.' + action.getName()"
             :value="action.getValue()"

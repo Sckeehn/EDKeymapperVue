@@ -118,11 +118,13 @@ export class Slider extends Action{
     }
 }
 export class Bind extends Action{
-    constructor(name: string, val: string){
+    device:string = ""
+    constructor(name: string, device: string, val: string){
         super(name, val)
+        this.device = device
     }
     getType(){
-        return "Bind"
+        return "Bind."+this.device
     }
     evaluate(input:string){
         return this.val

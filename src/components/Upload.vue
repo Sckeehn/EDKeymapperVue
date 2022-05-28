@@ -36,7 +36,7 @@ function uploadFile (event:any) {
         } else if(!isNaN(value)){
           category.addAction(new Toggle(keybind,value))
         } else {
-          category.addAction(new Bind(keybind,value))
+          category.addAction(new Bind(keybind,"Mouse",value))
         }
       }else{
         for(const subkeybind in keybinds.Root[keybind]){
@@ -44,8 +44,8 @@ function uploadFile (event:any) {
           let subcat = new Keybinds(subkeybind)
           if(value == undefined){
             const device = keybinds.Root[keybind][subkeybind]["Device"]
-            const action = keybinds.Root[keybind][subkeybind]["Key"]
-            category.addAction(new Bind(device,action))
+            const key = keybinds.Root[keybind][subkeybind]["Key"]
+            subcat.addAction(new Bind(subkeybind,device,key))
           }else{
             if(Weirdos.has(keybind)){
               category.addAction(new Dropdown(subkeybind, value))
@@ -54,7 +54,7 @@ function uploadFile (event:any) {
             } else if(!isNaN(value)){
               subcat.addAction(new Toggle(subkeybind,value))
             } else {
-              subcat.addAction(new Bind(subkeybind,value))
+              subcat.addAction(new Bind(subkeybind,"Mouse",value))
             }
           }
           category.addSection(subcat)
