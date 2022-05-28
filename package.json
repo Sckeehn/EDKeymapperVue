@@ -11,6 +11,7 @@
   "dependencies": {
     "@tauri-apps/api": "^1.0.0-rc.6",
     "fast-xml-parser": "^4.0.7",
+    "sass": "^1.52.1",
     "vue": "^3.2.25"
   },
   "devDependencies": {

@@ -4,10 +4,11 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Upload from './components/Upload.vue'
 import Editor from './components/Editor.vue'
-
 import { provide, inject } from 'vue'
 import { state,store } from './types'
 import USKeyboard from './components/USKeyboard.vue'
+import Numpad from './components/Numpad.vue'
+import mouseControls from './components/mouseControls.vue'
 
 </script>
 <template>
@@ -21,6 +22,12 @@ import USKeyboard from './components/USKeyboard.vue'
       </div>
         <div id="bigWrapper">
         <USKeyboard msg='AAAAAAAAAA' />
+        </div>
+        <div id="numWrapper">
+        <Numpad msg=''/>
+        </div>
+        <div id="mouseWrapper">
+        <mouseControls msg=""/>
         </div>
     </div>
 </template>

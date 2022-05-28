@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref,reactive, readonly } from 'vue'
-import { keys, Key, selection } from "../keyboardMaps"
+import { usNumPad, Key } from "../keyboardMaps"
 
 defineProps<{ msg:string }>();
 
@@ -18,13 +18,16 @@ function unhoverKey(event:any){
     hoverActions.is_hover=false
     hoverActions.location = [0,0]
 }
-// if selection.settings has a keybind, match it to the key
 
 </script>
 
 <template>
-    <div v-for="[name,key] in keys.usLayout" :key="name" class="TKLkeyWrapper">
-        <button :name="name" :class="'keyWidth-'+key.coord[3]+' keyBorder keyState-' + key.coord[4]" @mouseover="hoverKey" @mouseleave="unhoverKey">
+    <div id="spacer" class="keyWidth-20"></div>
+    <div v-for="[name,key] in usNumPad" :key="name" class="numkeyWrapper">
+        <button v-if="name == 'Key_numplus' || name == 'Key_numEnter'" :name="name" class="tallboy keyBorder" @mouseover="hoverKey" @mouseleave="unhoverKey">
+            {{ key.name }}
+        </button>
+        <button v-else :name="name" :class="'keyWidth-'+key.coord[3]+' keyBorder'" @mouseover="hoverKey" @mouseleave="unhoverKey">
             {{key.name}}
         </button>
         <div :class="'keyWidth-'+key.coord[2]"></div>
