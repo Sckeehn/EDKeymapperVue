@@ -24,12 +24,15 @@ function unhoverKey(event:any){
 <template>
     <div id="spacer" class="keyWidth-20"></div>
     <div v-for="[name,key] in usNumPad" :key="name" class="numkeyWrapper">
-        <button v-if="name == 'Key_numplus' || name == 'Key_numEnter'" :name="name" class="tallboy keyBorder" @mouseover="hoverKey" @mouseleave="unhoverKey">
-            {{ key.name }}
-        </button>
-        <button v-else :name="name" :class="'keyWidth-'+key.coord[3]+' keyBorder'" @mouseover="hoverKey" @mouseleave="unhoverKey">
+        <!-- keyWidth keyHeight keyBorder (optional)extraKey -->
+        <button 
+            :name="name"
+            :class="'keyWidth-'+key.coord[3]+' keyHeight-'+key.coord[2]+' keyBorder'+((key.coord[2] == 1)?'':' extraKey')"
+            @mouseover="hoverKey"
+            @mouseleave="unhoverKey"
+            >
             {{key.name}}
         </button>
-        <div :class="'keyWidth-'+key.coord[2]"></div>
+        <div :class="'keyWidth-'+key.coord[1]"></div>
     </div>
 </template>

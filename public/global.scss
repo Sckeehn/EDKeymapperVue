@@ -91,6 +91,12 @@ $keySize: 2.5vw;
    }
 }
 
+@for $size from 1 to 6 {
+   .keyHeight-#{$size} {
+      grid-row: auto / span #{$size};
+   }
+}
+
 .keyBorder {
    border: $borderWidth $borderType $buttonSelected;
    padding-left: .25em;
@@ -114,9 +120,7 @@ $keySize: 2.5vw;
 .numkeyWrapper{
    display: contents;
 }
-.tallboy{
-   grid-column: auto / span 4;
-   grid-row: auto / span 2;
+.extraKey{
    height: 100%;
    justify-content: center;
 }
@@ -129,54 +133,24 @@ $keySize: 2.5vw;
    height:200px;
    width:500px;
 }
-#mouseBox1{
-   grid-row: 1;
-   grid-column: 1;
 
+$boxNum: 1;
+@for $x from 1 to 4 {
+   @for $y from 1 to 4 {
+      #mouseBox#{$boxNum} {
+         grid-column: #{$x};
+         grid-row: #{$y};
+      }
+      $boxNum: $boxNum + 1;
+   }
 }
-#mouseBox2{
-   grid-row: 1;
-   grid-column: 2;
 
-}
-#mouseBox3{
-   grid-row: 1;
-   grid-column: 3;
 
-}
-#mouseBox4{
+#mouseControlList{
    grid-row: 2;
-   grid-column: 1;
+   grid-column: 4;
 
 }
-#mouseBox5{
-   grid-row: 2;
-   grid-column: 2;
-
-}
-#mouseBox6{
-   grid-row: 2;
-   grid-column: 3;
-
-}
-#mouseBox7{
-   grid-row: 3;
-   grid-column: 1;
-
-}
-#mouseBox8{
-   grid-row: 3;
-   grid-column: 2;
-
-}
-#mouseBox9{
-   grid-row: 3;
-   grid-column: 3;
-
-}
-
-
-
 
 $boxHeight: 4vw;
 #mouse{
@@ -214,11 +188,6 @@ $boxHeight: 4vw;
    margin:auto;
    display:block;
    cursor:pointer;
-}
-#mouseControlList{
-   grid-row: 2;
-   grid-column: 4;
-
 }
 
 #scrollup{

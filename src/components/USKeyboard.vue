@@ -24,9 +24,9 @@ function unhoverKey(event:any){
 
 <template>
     <div v-for="[name,key] in keys.usLayout" :key="name" class="TKLkeyWrapper">
-        <button v-if="key.coord != undefined" :name="name" :class="'keyWidth-'+key.coord[3]+' keyBorder keyState-' + key.coord[4]" @mouseover="hoverKey" @mouseleave="unhoverKey">
+        <button :name="name" :class="'keyWidth-'+key.coord[3]+' keyBorder keyState-' + key.coord[4]" @mouseover="hoverKey" @mouseleave="unhoverKey">
             {{key.name}}
         </button>
-        <div v-if="key.coord != undefined" :class="'keyWidth-'+key.coord[2]"></div>
+        <div :class="'keyWidth-'+key.coord[1]"></div>
     </div>
 </template>
