@@ -1,24 +1,33 @@
 <script setup lang="ts">
 import { ref,reactive, readonly } from 'vue'
-import { keys, Key, selection } from "../keyboardMaps"
+import { keys, Key, selection, currentKeys } from "../keyboardMaps"
 
 defineProps<{ msg:string }>();
 
 const hoverActions = reactive({
   is_hover: false,
-  location: [0,0]
+  location: [0,0],
+  hover_element: '',
 })
 
 function hoverKey(event:any){
     hoverActions.is_hover=true
-    hoverActions.location = [event.clientX,event.clientY]
+    hoverActions.location = [event.clientX,event.clientY],
+    hoverActions.hover_element = event.target.name
+    // console.log(event.target)
+    // console.log(currentKeys)
+    // console.log(currentKeys.get(event.target.name))
 }
 
 function unhoverKey(event:any){
     hoverActions.is_hover=false
-    hoverActions.location = [0,0]
+    hoverActions.location = [0,0],
+    hoverActions.hover_element = ''
 }
-// if selection.settings has a keybind, match it to the key
+// if(hoverActions.is_hover){
+//  set the text of a hidden div to that of hover_elements matching key
+//  show hidden div
+// }
 
 </script>
 
@@ -28,5 +37,8 @@ function unhoverKey(event:any){
             {{key.name}}
         </button>
         <div :class="'keyWidth-'+key.coord[1]"></div>
+    </div>
+    <div v-if="hoverActions.is_hover == true">
+    {{ currentKeys.get(hoverActions.hover_element) }}
     </div>
 </template>
