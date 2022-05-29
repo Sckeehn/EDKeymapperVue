@@ -3,6 +3,7 @@ import { inject, ref } from 'vue'
 import { Category, Settings, Weirdos } from "../ControlsList"
 import { getKeybinds } from '../xml'
 import { cache,state,store,Keybinds,Toggle,Bind,Slider, Dropdown } from '../types'
+import { keys, defaultUS } from '../keyboardMaps'
 
 defineProps<{ msg: string }>()
 
@@ -23,6 +24,12 @@ function uploadFile (event:any) {
     for(const keybind in keybinds.Root){
       if(keybind == "KeyboardLayout"){
         cache.layout = keybinds.Root[keybind]
+        //copy defaultUS to keys.layout
+        if(keybinds.Root[keybind].includes('US')){
+          keys.layout = new Map(defaultUS)
+        }else{
+          console.log("Unknown layout")
+        }
         continue
       }
       let category = new Keybinds(keybind)

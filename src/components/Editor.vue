@@ -2,9 +2,18 @@
 import { inject, reactive, onUpdated } from "vue";
 import { cache, state, Keybinds, Action } from "../types";
 import { Settings, Weirdos } from "../ControlsList";
-import { selection, keys, Key } from "../keyboardMaps"
+import { selection, keys, defaultUS } from "../keyboardMaps"
 
 defineProps<{ msg: string }>();
+
+function resetKeys() {
+  if(cache.layout.includes("US")){
+    console.log(defaultUS)
+    keys.layout = new Map(defaultUS)
+  }else{
+    console.log("Unknown layout")
+  }
+}
 
 //deprecated, basically replaced by changeShown()
 function getFrom(lst: string[]) {
@@ -23,6 +32,7 @@ function getFrom(lst: string[]) {
 }
 
 function changeShown(event: any) {
+  resetKeys()
   selection.value = parseInt(event.target.value);
   var working: Keybinds[] = [];
   var first = Settings[selection.value].controls;
@@ -39,39 +49,38 @@ function changeShown(event: any) {
       //subkeybinds go here
       for(const x in item.section){
         for(const y in item.section[x].action){
-          if(keys.usLayout.has(item.section[x].action[y].val)){
+          if(keys.layout.has(item.section[x].action[y].val)){
             //get the key coord
-            let key = keys.usLayout.get(item.section[x].action[y].val)
+            let key = keys.layout.get(item.section[x].action[y].val)
             let coord: number[] = (key == undefined)? [0,0,0,0]: key.coord
 
-            if(coord.length == 4){
+            if(coord.length == 5){
               coord[4] = 1
             }
             var tempKey = {
-              name: String(keys.usLayout.get(item.section[x].action[y].val)?.name),
+              name: String(keys.layout.get(item.section[x].action[y].val)?.name),
               coord: coord
             }
-            keys.usLayout.set(item.section[x].action[y].val, tempKey)
+            keys.layout.set(item.section[x].action[y].val, tempKey)
           }
         }
       }
     }
     else{
       for(const x in item.action){
-        if(keys.usLayout.has(item.action[x].val)){
+        if(keys.layout.has(item.action[x].val)){
           //get the key coord
-          let key = keys.usLayout.get(item.action[x].val)
+          let key = keys.layout.get(item.action[x].val)
           let coord: number[] = (key == undefined)? [0,0,0,0]: key.coord
 
           if(coord.length == 4){
             coord[4] = 1
           }
           var tempKey = {
-            name: String(keys.usLayout.get(item.action[x].val)?.name),
+            name: String(keys.layout.get(item.action[x].val)?.name),
             coord: coord
           }
-          keys.usLayout.set(item.action[x].val, tempKey)
-          console.log(keys.usLayout.get(item.action[x].val))
+          keys.layout.set(item.action[x].val, tempKey)
         }
       }
     }
