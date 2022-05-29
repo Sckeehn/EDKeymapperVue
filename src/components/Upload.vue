@@ -1,15 +1,10 @@
 <script setup lang="ts">
-import { inject, ref } from 'vue'
-import { Category, Settings, Weirdos } from "../ControlsList"
-import { getKeybinds } from '../xml'
-import { cache,state,store,Keybinds,Toggle,Bind,Slider, Dropdown } from '../types'
-import { keys, defaultUS } from '../keyboardMaps'
+import { loadKeybinds } from '../xml'
+import { cache,state } from '../types'
 
 defineProps<{ msg: string }>()
 
 // retrieves cache
-
-const output = ref({})
 
 function uploadFile (event:any) {
   let file = event.target.files[0]
@@ -17,62 +12,11 @@ function uploadFile (event:any) {
   // reads content of file
   fr.onload = (e:any) => {
     let data = e.target.result
-    let keybinds = getKeybinds(data)
-    output.value = keybinds
-    state.current = "uploaded"
-    let settings: Keybinds[] = []
-    for(const keybind in keybinds.Root){
-      if(keybind == "KeyboardLayout"){
-        cache.layout = keybinds.Root[keybind]
-        if(keybinds.Root[keybind].includes('US')){
-          //copy defaultUS values to keys.layout, not reference
-          for(const [key,val] of defaultUS){
-            keys.layout.set(key,defaultUS.get(key)!)
-          }
-        }else{
-          console.log("Unknown layout")
-        }
-        continue
-      }
-      let category = new Keybinds(keybind)
-      //divide into sections and actions
-      if(keybinds.Root[keybind]["Value"]!=undefined){
-        let value = keybinds.Root[keybind]["Value"]
-        if(Weirdos.has(keybind)){
-          category.addAction(new Dropdown(keybind, value))
-        } else if(!isNaN(value) && value.toString().indexOf('.') != -1){
-          category.addAction(new Slider(keybind,value))
-        } else if(!isNaN(value)){
-          category.addAction(new Toggle(keybind,value))
-        } else {
-          category.addAction(new Bind(keybind,"Mouse",value))
-        }
-      }else{
-        for(const subkeybind in keybinds.Root[keybind]){
-          const value = keybinds.Root[keybind][subkeybind]["Value"]
-          let subcat = new Keybinds(subkeybind)
-          if(value == undefined){
-            const device = keybinds.Root[keybind][subkeybind]["Device"]
-            const key = keybinds.Root[keybind][subkeybind]["Key"]
-            subcat.addAction(new Bind(subkeybind,device,key))
-          }else{
-            if(Weirdos.has(keybind)){
-              category.addAction(new Dropdown(subkeybind, value))
-            } else if(!isNaN(value) && value.toString().indexOf('.') != -1){
-              subcat.addAction(new Slider(subkeybind,value))
-            } else if(!isNaN(value)){
-              subcat.addAction(new Toggle(subkeybind,value))
-            } else {
-              subcat.addAction(new Bind(subkeybind,"Mouse",value))
-            }
-          }
-          category.addSection(subcat)
-        }
-      }
-      settings.push(category)
+    loadKeybinds(data)
+    //bug for this toggle, quick fix
+    if(cache.keybinds.length > 0) {
+      state.current = "uploaded"
     }
-    console.log(settings)
-    cache.keybinds = settings
   }
   fr.readAsText(file)
 }

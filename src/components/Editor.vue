@@ -1,21 +1,12 @@
 <script setup lang="ts">
+
 import { inject, reactive, onUpdated } from "vue";
 import { cache, state, Keybinds, Action } from "../types";
 import { Settings, Weirdos } from "../ControlsList";
 import { selection, keys, defaultUS, currentKeys } from "../keyboardMaps"
+import { resetKeys, loadWorking } from "../xml"
 
 defineProps<{ msg: string }>();
-
-function resetKeys() {
-  if(cache.layout.includes("US")){
-    console.log("US")
-    for(const [key,val] of keys.layout){
-      val.coord[4] = 0
-    }
-  }else{
-    console.log("Unknown layout")
-  }
-}
 
 //deprecated, basically replaced by changeShown()
 function getFrom(lst: string[]) {
@@ -36,16 +27,7 @@ function getFrom(lst: string[]) {
 function changeShown(event: any) {
   resetKeys()
   selection.value = parseInt(event.target.value);
-  var working: Keybinds[] = [];
-  var first = Settings[selection.value].controls;
-  for (const x in first) {
-    for (const y in cache.keybinds) {
-      if (first[x] == cache.keybinds[y].name) {
-        working.push(cache.keybinds[y])
-      }
-    }
-  }
-  selection.settings = working;
+  selection.settings = loadWorking();
   for(let item of selection.settings){
     if(item.section.length > 0){
       //subkeybinds go here
