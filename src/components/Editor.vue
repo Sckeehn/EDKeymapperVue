@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { cache, Keybinds } from "../types"
-import { Settings, Weirdos } from "../ControlsList"
-import { selection, keys } from "../keyboardMaps"
+
+import { inject, reactive, onUpdated } from "vue";
+import { cache, state, Keybinds, Action } from "../types";
+import { Settings, Weirdos } from "../ControlsList";
+import { selection, keys, defaultUS, currentKeys } from "../keyboardMaps"
 import { resetKeys, loadWorking } from "../xml"
 
 defineProps<{ msg: string }>();
@@ -43,7 +45,10 @@ function changeShown(event: any) {
               name: String(keys.layout.get(item.section[x].action[y].val)?.name),
               coord: coord
             }
+            console.log(selection.settings)
+            console.log(item.section[x].action[y].val)
             keys.layout.set(item.section[x].action[y].val, tempKey)
+            currentKeys.set(item.section[x].action[y].val, item.name)
           }
         }
       }

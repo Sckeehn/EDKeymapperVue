@@ -127,3 +127,8 @@ export const defaultUS = new Map([
 export const keys = reactive({
     layout: new Map<string,Key>()
 })
+
+export const currentKeys:Map<string, string> = new Map([
+
+    
+])
