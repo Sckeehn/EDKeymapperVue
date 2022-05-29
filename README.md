@@ -1,3 +1,9 @@
+# Notes
+
+## Migration to Rust
+
+A migration to Rust would requires a complete overhaul of our system.  This would entail a rewrite for almost every function and class already implemented.
+
 # Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.

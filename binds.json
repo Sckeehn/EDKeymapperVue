@@ -1,0 +1,3661 @@
+{
+    "KeyboardLayout": "en-US",
+    "MouseXMode": {
+        "Value": ""
+    },
+    "MouseXDecay": {
+        "Value": "0"
+    },
+    "MouseYMode": {
+        "Value": ""
+    },
+    "MouseYDecay": {
+        "Value": "0"
+    },
+    "MouseReset": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MouseSensitivity": {
+        "Value": "0.71442634"
+    },
+    "MouseDecayRate": {
+        "Value": "1.00000000"
+    },
+    "MouseDeadzone": {
+        "Value": "0.00000000"
+    },
+    "MouseLinearity": {
+        "Value": "1.12975001"
+    },
+    "MouseGUI": [
+        {
+            "Value": "1"
+        },
+        {
+            "Value": "1"
+        }
+    ],
+    "YawAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "1"
+        },
+        "Deadzone": {
+            "Value": "0.34"
+        }
+    },
+    "YawLeftButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "YawRightButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "YawToRollMode": {
+        "Value": "Bindings_YawIntoRollTime"
+    },
+    "YawToRollSensitivity": {
+        "Value": "0.40000001"
+    },
+    "YawToRollMode_FAOff": {
+        "Value": ""
+    },
+    "YawToRollButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "0"
+        }
+    },
+    "RollAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "RollLeftButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Q"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RollRightButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_E"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PitchAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "PitchUpButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PitchDownButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "LateralThrustRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "LeftThrustButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RightThrustButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VerticalThrustRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "UpThrustButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Space"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "DownThrustButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_C"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "AheadThrust": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "ForwardThrustButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_W"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BackwardThrustButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "UseAlternateFlightValuesToggle": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "YawAxisAlternate": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "RollAxisAlternate": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "PitchAxisAlternate": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "LateralThrustAlternate": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "VerticalThrustAlternate": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "ThrottleAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "ThrottleRange": {
+        "Value": ""
+    },
+    "ToggleReverseThrottleInput": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "ForwardKey": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BackwardKey": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ThrottleIncrement": {
+        "Value": "0.00000000"
+    },
+    "SetSpeedMinus100": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SetSpeedMinus75": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SetSpeedMinus50": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SetSpeedMinus25": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SetSpeedZero": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_X"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SetSpeed25": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SetSpeed50": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SetSpeed75": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SetSpeed100": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "YawAxis_Landing": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "YawLeftButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "YawRightButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "YawToRollMode_Landing": {
+        "Value": ""
+    },
+    "PitchAxis_Landing": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "PitchUpButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PitchDownButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RollAxis_Landing": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "RollLeftButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RollRightButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "LateralThrust_Landing": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "LeftThrustButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RightThrustButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VerticalThrust_Landing": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "UpThrustButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "DownThrustButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "AheadThrust_Landing": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "ForwardThrustButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BackwardThrustButton_Landing": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ToggleFlightAssist": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Z"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "0"
+        }
+    },
+    "UseBoostJuice": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "HyperSuperCombination": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_J"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "Supercruise": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "Hyperspace": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "DisableRotationCorrectToggle": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "OrbitLinesToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Equals"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SelectTarget": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_T"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CycleNextTarget": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_G"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CyclePreviousTarget": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SelectHighestThreat": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Tab"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CycleNextHostileTarget": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CyclePreviousHostileTarget": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "TargetWingman0": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F5"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "TargetWingman1": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F6"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "TargetWingman2": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F7"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SelectTargetsTarget": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_0"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "WingNavLock": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Minus"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CycleNextSubsystem": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Y"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CyclePreviousSubsystem": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "TargetNextRouteSystem": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PrimaryFire": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SecondaryFire": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CycleFireGroupNext": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CycleFireGroupPrevious": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "DeployHardpointToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_U"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "DeployHardpointsOnFire": {
+        "Value": "1"
+    },
+    "ToggleButtonUpInput": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "DeployHeatSink": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ShipSpotLightToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_L"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RadarRangeAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "RadarIncreaseRange": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_PageUp"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RadarDecreaseRange": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_PageDown"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "IncreaseEnginesPower": {
+        "Primary": {
+            "Modifier": {
+                "Device": "Keyboard",
+                "Key": "Key_LeftShift"
+            },
+            "Device": "Keyboard",
+            "Key": "Key_W"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "IncreaseWeaponsPower": {
+        "Primary": {
+            "Modifier": {
+                "Device": "Keyboard",
+                "Key": "Key_LeftShift"
+            },
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "IncreaseSystemsPower": {
+        "Primary": {
+            "Modifier": {
+                "Device": "Keyboard",
+                "Key": "Key_LeftShift"
+            },
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ResetPowerDistribution": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_S"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "HMDReset": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F12"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ToggleCargoScoop": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Home"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "EjectAllCargo": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_Multiply"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "LandingGearToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F4"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MicrophoneMute": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_BackSlash"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "0"
+        }
+    },
+    "MuteButtonMode": {
+        "Value": "mute_toggle"
+    },
+    "CqcMuteButtonMode": {
+        "Value": "mute_pushToTalk"
+    },
+    "UseShieldCell": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_B"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FireChaffLauncher": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_V"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ChargeECM": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_5"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "EnableRumbleTrigger": {
+        "Value": "1"
+    },
+    "EnableMenuGroups": {
+        "Value": "0"
+    },
+    "WeaponColourToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "EngineColourToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "NightVisionToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_0"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "UIFocus": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_LeftShift"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "UIFocusMode": {
+        "Value": "Bindings_FocusModeHold"
+    },
+    "FocusLeftPanel": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FocusCommsPanel": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FocusOnTextEntryField": {
+        "Value": "0"
+    },
+    "QuickCommsPanel": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Enter"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FocusRadarPanel": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FocusRightPanel": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_4"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "LeftPanelFocusOptions": {
+        "Value": ""
+    },
+    "CommsPanelFocusOptions": {
+        "Value": ""
+    },
+    "RolePanelFocusOptions": {
+        "Value": ""
+    },
+    "RightPanelFocusOptions": {
+        "Value": ""
+    },
+    "EnableCameraLockOn": {
+        "Value": "1"
+    },
+    "GalaxyMapOpen": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_M"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SystemMapOpen": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_N"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ShowPGScoreSummaryInput": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "0"
+        }
+    },
+    "HeadLookToggle": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "Pause": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_P"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FriendsMenu": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OpenCodexGoToDiscovery": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_O"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PlayerHUDModeToggle": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSEnter": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Apostrophe"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "UI_Up": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_W"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_UpArrow"
+        }
+    },
+    "UI_Down": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_S"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_DownArrow"
+        }
+    },
+    "UI_Left": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_LeftArrow"
+        }
+    },
+    "UI_Right": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_RightArrow"
+        }
+    },
+    "UI_Select": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Space"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "UI_Back": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Backspace"
+        },
+        "Secondary": {
+            "Device": "Mouse",
+            "Key": "Mouse_2"
+        }
+    },
+    "UI_Toggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Equals"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CycleNextPanel": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_E"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_End"
+        }
+    },
+    "CyclePreviousPanel": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Q"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_Delete"
+        }
+    },
+    "CycleNextPage": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_C"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_Home"
+        }
+    },
+    "CyclePreviousPage": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Z"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_Insert"
+        }
+    },
+    "MouseHeadlook": {
+        "Value": "1"
+    },
+    "MouseHeadlookInvert": {
+        "Value": "0"
+    },
+    "MouseHeadlookSensitivity": {
+        "Value": "0.50000000"
+    },
+    "HeadlookDefault": {
+        "Value": "0"
+    },
+    "HeadlookIncrement": {
+        "Value": "0.00000000"
+    },
+    "HeadlookMode": {
+        "Value": "Bindings_HeadlookModeAccumulate"
+    },
+    "HeadlookResetOnToggle": {
+        "Value": "1"
+    },
+    "HeadlookSensitivity": {
+        "Value": "1.00000000"
+    },
+    "HeadlookSmoothing": {
+        "Value": "1"
+    },
+    "HeadLookReset": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "HeadLookPitchUp": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "HeadLookPitchDown": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "HeadLookPitchAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "HeadLookYawLeft": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "HeadLookYawRight": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "HeadLookYawAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "MotionHeadlook": {
+        "Value": "0"
+    },
+    "HeadlookMotionSensitivity": {
+        "Value": "1.00000000"
+    },
+    "yawRotateHeadlook": {
+        "Value": "0"
+    },
+    "CamPitchAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "CamPitchUp": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_T"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamPitchDown": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_G"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamYawAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "CamYawLeft": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Q"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamYawRight": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_E"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamTranslateYAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "CamTranslateForward": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_W"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamTranslateBackward": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_S"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamTranslateXAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "CamTranslateLeft": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamTranslateRight": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamTranslateZAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "CamTranslateUp": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_R"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamTranslateDown": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamZoomAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "CamZoomIn": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Z"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamZoomOut": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_X"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CamTranslateZHold": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "0"
+        }
+    },
+    "GalaxyMapHome": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Home"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ToggleDriveAssist": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Z"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "DriveAssistDefault": {
+        "Value": "1"
+    },
+    "MouseBuggySteeringXMode": {
+        "Value": ""
+    },
+    "MouseBuggySteeringXDecay": {
+        "Value": "0"
+    },
+    "MouseBuggyRollingXMode": {
+        "Value": ""
+    },
+    "MouseBuggyRollingXDecay": {
+        "Value": "0"
+    },
+    "MouseBuggyYMode": {
+        "Value": ""
+    },
+    "MouseBuggyYDecay": {
+        "Value": "0"
+    },
+    "SteeringAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "SteerLeftButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SteerRightButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyRollAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "BuggyRollLeftButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyRollRightButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyPitchAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "BuggyPitchUpButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyPitchDownButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VerticalThrustersButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Space"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "0"
+        }
+    },
+    "BuggyPrimaryFireButton": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggySecondaryFireButton": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "AutoBreakBuggyButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_X"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "0"
+        }
+    },
+    "HeadlightsBuggyButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_L"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ToggleBuggyTurretButton": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_U"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyCycleFireGroupNext": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_N"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyCycleFireGroupPrevious": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SelectTarget_Buggy": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MouseTurretXMode": {
+        "Value": "Bindings_MouseYaw"
+    },
+    "MouseTurretXDecay": {
+        "Value": "1"
+    },
+    "MouseTurretYMode": {
+        "Value": "Bindings_MousePitchInverted"
+    },
+    "MouseTurretYDecay": {
+        "Value": "1"
+    },
+    "BuggyTurretYawAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "BuggyTurretYawLeftButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyTurretYawRightButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyTurretPitchAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "BuggyTurretPitchUpButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyTurretPitchDownButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "BuggyTurretMouseSensitivity": {
+        "Value": "1.00000000"
+    },
+    "BuggyTurretMouseDeadzone": {
+        "Value": "0.05000000"
+    },
+    "BuggyTurretMouseLinearity": {
+        "Value": "1.00000000"
+    },
+    "DriveSpeedAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "BuggyThrottleRange": {
+        "Value": "Bindings_BuggyThrottleForewardOnly"
+    },
+    "BuggyToggleReverseThrottleInput": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "BuggyThrottleIncrement": {
+        "Value": "0.00000000"
+    },
+    "IncreaseSpeedButtonMax": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_E"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "DecreaseSpeedButtonMax": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Q"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "IncreaseSpeedButtonPartial": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "DecreaseSpeedButtonPartial": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "IncreaseEnginesPower_Buggy": {
+        "Primary": {
+            "Modifier": {
+                "Device": "Keyboard",
+                "Key": "Key_LeftShift"
+            },
+            "Device": "Keyboard",
+            "Key": "Key_W"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "IncreaseWeaponsPower_Buggy": {
+        "Primary": {
+            "Modifier": {
+                "Device": "Keyboard",
+                "Key": "Key_LeftShift"
+            },
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "IncreaseSystemsPower_Buggy": {
+        "Primary": {
+            "Modifier": {
+                "Device": "Keyboard",
+                "Key": "Key_LeftShift"
+            },
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ResetPowerDistribution_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_S"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ToggleCargoScoop_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Home"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "EjectAllCargo_Buggy": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RecallDismissShip": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "UIFocus_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_LeftShift"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FocusLeftPanel_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FocusCommsPanel_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "QuickCommsPanel_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Enter"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FocusRadarPanel_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FocusRightPanel_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_4"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "GalaxyMapOpen_Buggy": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SystemMapOpen_Buggy": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OpenCodexGoToDiscovery_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_O"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PlayerHUDModeToggle_Buggy": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_M"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "HeadLookToggle_Buggy": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "MultiCrewToggleMode": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Tab"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewPrimaryFire": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewSecondaryFire": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewPrimaryUtilityFire": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewSecondaryUtilityFire": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewThirdPersonMouseXMode": {
+        "Value": "Bindings_MouseYaw"
+    },
+    "MultiCrewThirdPersonMouseXDecay": {
+        "Value": "0"
+    },
+    "MultiCrewThirdPersonMouseYMode": {
+        "Value": "Bindings_MousePitch"
+    },
+    "MultiCrewThirdPersonMouseYDecay": {
+        "Value": "0"
+    },
+    "MultiCrewThirdPersonYawAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "MultiCrewThirdPersonYawLeftButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewThirdPersonYawRightButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewThirdPersonPitchAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "MultiCrewThirdPersonPitchUpButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewThirdPersonPitchDownButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewThirdPersonMouseSensitivity": {
+        "Value": "30.00000000"
+    },
+    "MultiCrewThirdPersonFovAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "MultiCrewThirdPersonFovOutButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewThirdPersonFovInButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewCockpitUICycleForward": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MultiCrewCockpitUICycleBackward": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OrderRequestDock": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OrderDefensiveBehaviour": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OrderAggressiveBehaviour": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OrderFocusTarget": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OrderHoldFire": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_4"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OrderHoldPosition": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OrderFollow": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_6"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "OpenOrders": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PhotoCameraToggle": {
+        "Primary": {
+            "Modifier": [
+                {
+                    "Device": "Keyboard",
+                    "Key": "Key_LeftControl"
+                },
+                {
+                    "Device": "Keyboard",
+                    "Key": "Key_LeftAlt"
+                }
+            ],
+            "Device": "Keyboard",
+            "Key": "Key_Space"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PhotoCameraToggle_Buggy": {
+        "Primary": {
+            "Modifier": [
+                {
+                    "Device": "Keyboard",
+                    "Key": "Key_LeftControl"
+                },
+                {
+                    "Device": "Keyboard",
+                    "Key": "Key_LeftAlt"
+                }
+            ],
+            "Device": "Keyboard",
+            "Key": "Key_Space"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraScrollLeft": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_LeftArrow"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraScrollRight": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_RightArrow"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ToggleFreeCam": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_0"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraOne": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraTwo": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraThree": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraFour": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_4"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraFive": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_5"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraSix": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_6"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraSeven": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_7"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraEight": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_8"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "VanityCameraNine": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_9"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FreeCamToggleHUD": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_LeftControl"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FreeCamSpeedInc": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Equals"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FreeCamSpeedDec": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Minus"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MoveFreeCamY": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "ThrottleRangeFreeCam": {
+        "Value": ""
+    },
+    "ToggleReverseThrottleInputFreeCam": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "MoveFreeCamForward": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_W"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MoveFreeCamBackwards": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_S"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MoveFreeCamX": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "MoveFreeCamRight": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MoveFreeCamLeft": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MoveFreeCamZ": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "MoveFreeCamUpAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "MoveFreeCamDownAxis": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "MoveFreeCamUp": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_R"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "MoveFreeCamDown": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_F"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PitchCameraMouse": {
+        "Value": "Bindings_MousePitchInverted"
+    },
+    "YawCameraMouse": {
+        "Value": "Bindings_MouseYaw"
+    },
+    "PitchCamera": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "1"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "FreeCamMouseSensitivity": {
+        "Value": "5.00000000"
+    },
+    "FreeCamMouseYDecay": {
+        "Value": "1"
+    },
+    "PitchCameraUp": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PitchCameraDown": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "YawCamera": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "FreeCamMouseXDecay": {
+        "Value": "1"
+    },
+    "YawCameraLeft": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "YawCameraRight": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RollCamera": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "RollCameraLeft": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Q"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "RollCameraRight": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_E"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ToggleRotationLock": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_End"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FixCameraRelativeToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Numpad_0"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FixCameraWorldToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Space"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "QuitCamera": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Backspace"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ToggleAdvanceMode": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Delete"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FreeCamZoomIn": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_UpArrow"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FreeCamZoomOut": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_DownArrow"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FStopDec": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_LeftArrow"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "FStopInc": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "StoreEnableRotation": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "StorePitchCamera": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "StoreYawCamera": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "StoreCamZoomIn": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_X"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "StoreCamZoomOut": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Z"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "StoreToggle": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Tab"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CommanderCreator_Undo": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Z"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CommanderCreator_Redo": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_X"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CommanderCreator_Rotation_MouseToggle": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "CommanderCreator_Rotation": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "1"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "GalnetAudio_Play_Pause": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "GalnetAudio_SkipForward": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "GalnetAudio_SkipBackward": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "GalnetAudio_ClearQueue": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSCameraPitch": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "ExplorationFSSCameraPitchIncreaseButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSCameraPitchDecreaseButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSCameraYaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "ExplorationFSSCameraYawIncreaseButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSCameraYawDecreaseButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSZoomIn": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_1"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSZoomOut": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_2"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSMiniZoomIn": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_UpArrow"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSMiniZoomOut": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_DownArrow"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSRadioTuningX_Raw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "ExplorationFSSRadioTuningX_Increase": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_D"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_RightBracket"
+        }
+    },
+    "ExplorationFSSRadioTuningX_Decrease": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_A"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_LeftBracket"
+        }
+    },
+    "ExplorationFSSRadioTuningAbsoluteX": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "FSSTuningSensitivity": {
+        "Value": "1.00000000"
+    },
+    "ExplorationFSSDiscoveryScan": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSQuit": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Backspace"
+        },
+        "Secondary": {
+            "Device": "Keyboard",
+            "Key": "Key_Apostrophe"
+        }
+    },
+    "FSSMouseXMode": {
+        "Value": "Bindings_MouseYaw"
+    },
+    "FSSMouseXDecay": {
+        "Value": "1"
+    },
+    "FSSMouseYMode": {
+        "Value": "Bindings_MousePitchInverted"
+    },
+    "FSSMouseYDecay": {
+        "Value": "1"
+    },
+    "FSSMouseSensitivity": {
+        "Value": "5.00000000"
+    },
+    "FSSMouseDeadzone": {
+        "Value": "0.00000000"
+    },
+    "FSSMouseLinearity": {
+        "Value": "1.00000000"
+    },
+    "ExplorationFSSTarget": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_T"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationFSSShowHelp": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_H"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "ExplorationSAAChangeScannedAreaViewToggle": {
+        "Primary": {
+            "Device": "Mouse",
+            "Key": "Mouse_3"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "ToggleOn": {
+            "Value": "1"
+        }
+    },
+    "ExplorationSAAExitThirdPerson": {
+        "Primary": {
+            "Device": "Keyboard",
+            "Key": "Key_Backspace"
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SAAThirdPersonMouseXMode": {
+        "Value": ""
+    },
+    "SAAThirdPersonMouseXDecay": {
+        "Value": "0"
+    },
+    "SAAThirdPersonMouseYMode": {
+        "Value": ""
+    },
+    "SAAThirdPersonMouseYDecay": {
+        "Value": "0"
+    },
+    "SAAThirdPersonMouseSensitivity": {
+        "Value": "30.00000000"
+    },
+    "SAAThirdPersonYawAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "SAAThirdPersonYawLeftButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SAAThirdPersonYawRightButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SAAThirdPersonPitchAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "SAAThirdPersonPitchUpButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SAAThirdPersonPitchDownButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SAAThirdPersonFovAxisRaw": {
+        "Binding": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Inverted": {
+            "Value": "0"
+        },
+        "Deadzone": {
+            "Value": "0.00000000"
+        }
+    },
+    "SAAThirdPersonFovOutButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "SAAThirdPersonFovInButton": {
+        "Primary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        },
+        "Secondary": {
+            "Device": "{NoDevice}",
+            "Key": ""
+        }
+    },
+    "PresetName": "Custom",
+    "MajorVersion": "3",
+    "MinorVersion": "0"
+}

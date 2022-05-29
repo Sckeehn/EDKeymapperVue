@@ -1,14 +1,13 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
 import Upload from './components/Upload.vue'
 import Editor from './components/Editor.vue'
 import { provide, inject } from 'vue'
 import { state,store } from './types'
 import USKeyboard from './components/USKeyboard.vue'
 import Numpad from './components/Numpad.vue'
-import mouseControls from './components/mouseControls.vue'
+import MouseControls from './components/MouseControls.vue'
 
 </script>
 <template>
@@ -27,7 +26,7 @@ import mouseControls from './components/mouseControls.vue'
         <Numpad msg=''/>
         </div>
         <div id="mouseWrapper">
-        <mouseControls msg=""/>
+        <MouseControls msg=""/>
         </div>
     </div>
 </template>
