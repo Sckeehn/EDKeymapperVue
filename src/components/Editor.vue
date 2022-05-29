@@ -8,8 +8,10 @@ defineProps<{ msg: string }>();
 
 function resetKeys() {
   if(cache.layout.includes("US")){
-    console.log(defaultUS)
-    keys.layout = new Map(defaultUS)
+    console.log("US")
+    for(const [key,val] of keys.layout){
+      val.coord[4] = 0
+    }
   }else{
     console.log("Unknown layout")
   }

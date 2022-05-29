@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref,reactive, readonly } from 'vue'
-import { usNumPad, Key } from "../keyboardMaps"
+import { usNumPad } from "../keyboardMaps"
 
 defineProps<{ msg:string }>();
 
@@ -27,7 +27,7 @@ function unhoverKey(event:any){
         <!-- keyWidth keyHeight keyBorder (optional)extraKey -->
         <button 
             :name="name"
-            :class="'keyWidth-'+key.coord[3]+' keyHeight-'+key.coord[2]+' keyBorder'+((key.coord[2] == 1)?'':' extraKey')"
+            :class="'keyState-'+key.coord[4]+' keyWidth-'+key.coord[3]+' keyHeight-'+key.coord[2]+' keyBorder'+((key.coord[2] == 1)?'':' extraKey')"
             @mouseover="hoverKey"
             @mouseleave="unhoverKey"
             >

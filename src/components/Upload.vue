@@ -24,9 +24,11 @@ function uploadFile (event:any) {
     for(const keybind in keybinds.Root){
       if(keybind == "KeyboardLayout"){
         cache.layout = keybinds.Root[keybind]
-        //copy defaultUS to keys.layout
         if(keybinds.Root[keybind].includes('US')){
-          keys.layout = new Map(defaultUS)
+          //copy defaultUS values to keys.layout, not reference
+          for(const [key,val] of defaultUS){
+            keys.layout.set(key,defaultUS.get(key)!)
+          }
         }else{
           console.log("Unknown layout")
         }
