@@ -71,6 +71,7 @@ function changeShown(event: any) {
             coord: coord
           }
           keys.usLayout.set(item.action[x].val, tempKey)
+          console.log(keys.usLayout.get(item.action[x].val))
         }
       }
     }

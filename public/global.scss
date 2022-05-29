@@ -102,12 +102,20 @@ $keySize: 2.5vw;
    padding-left: .25em;
    padding-top: .25em;
    font-size: .75vw;
-   background-color: $buttonUnselected;
    cursor: pointer;
 }
+.keyState-0 {
+   background-color: $buttonUnselected;
+}
+
+.keyState-1 {
+   background-color: $buttonSelected;
+}
+
 .keyBorder:active {
    background-color: $buttonSelected;
 }
+
 #numWrapper {
    display: grid;
    grid-template-columns: repeat(20, $keySize/4);
@@ -135,8 +143,8 @@ $keySize: 2.5vw;
 }
 
 $boxNum: 1;
-@for $x from 1 to 4 {
-   @for $y from 1 to 4 {
+@for $y from 1 to 4 {
+   @for $x from 1 to 4 {
       #mouseBox#{$boxNum} {
          grid-column: #{$x};
          grid-row: #{$y};
