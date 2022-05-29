@@ -34,50 +34,46 @@ function changeShown(event: any) {
     }
   }
   selection.settings = working;
-  console.log(selection.settings)
   for(let item of selection.settings){
-    console.log(item)
-      if(item.section.length > 0){
-        console.log("idiot")
-        //subkeybinds go here
-        item.section[1].action[0].val
-        if(keys.usLayout.has(item.section[0].action[0].val)){
-          if(keys.usLayout.get(item.section[0].action[0].val)?.coord !== undefined){
-            var tempSubArray = keys.usLayout.get(item.section[0].action[0].val)?.coord
-          }
+    if(item.section.length > 0){
+      //subkeybinds go here
+      for(const x in item.section){
+        for(const y in item.section[x].action){
+          if(keys.usLayout.has(item.section[x].action[y].val)){
+            //get the key coord
+            let key = keys.usLayout.get(item.section[x].action[y].val)
+            let coord: number[] = (key == undefined)? [0,0,0,0]: key.coord
 
-          if(tempSubArray?.length == 4){
-            tempSubArray[4] = 1
+            if(coord.length == 4){
+              coord[4] = 1
+            }
+            var tempKey = {
+              name: String(keys.usLayout.get(item.section[x].action[y].val)?.name),
+              coord: coord
+            }
+            keys.usLayout.set(item.section[x].action[y].val, tempKey)
           }
-          var tempSubArray2 = {
-            name: String(keys.usLayout.get(item.section[0].action[0].val)?.name),
-            coord: tempArray as number[]
-          }
-          keys.usLayout.set(item.section[0].action[0].val, tempSubArray2)
         }
       }
-      else{
-        console.log(item.action[0].val)
-        if(keys.usLayout.has(item.action[0].val)){
-          console.log("Tit")
-          if(keys.usLayout.get(item.action[0].val)?.coord !== undefined){
-              var tempArray = keys.usLayout.get(item.action[0].val)?.coord
+    }
+    else{
+      for(const x in item.action){
+        if(keys.usLayout.has(item.action[x].val)){
+          //get the key coord
+          let key = keys.usLayout.get(item.action[x].val)
+          let coord: number[] = (key == undefined)? [0,0,0,0]: key.coord
+
+          if(coord.length == 4){
+            coord[4] = 1
           }
-          
-          if(tempArray?.length == 4){
-            tempArray[4] = 1
-            console.log("QUACK")
+          var tempKey = {
+            name: String(keys.usLayout.get(item.action[x].val)?.name),
+            coord: coord
           }
-          else{
-            console.log("YOU FUCKED UP")
-          }
-          var tempArray2 = {
-            name: String(keys.usLayout.get(item.action[0].val)?.name), 
-            coord: tempArray as number[]
-          }
-          keys.usLayout.set(item.action[0].val, tempArray2 )
+          keys.usLayout.set(item.action[x].val, tempKey)
         }
       }
+    }
   }
 }
 
