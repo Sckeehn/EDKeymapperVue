@@ -123,6 +123,16 @@ export const defaultUS = new Map([
     ['Key_downArrow',{ name: '⌄', coord: [6, 1, 1, 4, 0]}],
     ['Key_rightArrow',{ name: '>', coord: [6, 1, 1, 4, 0]}],
 ])
+export const mouseMap = new Map([
+    ['left_Click', { name:'left click', coord: [0, 0, 0, 0, 0]}],
+    ['right_Click', { name:'right click', coord: [0, 0, 0, 0, 0]}],
+    ['mouse4', { name:'Mouse 4', coord: [0, 0, 0, 0, 0]}],
+    ['mouse5', { name:'Mouse 5', coord: [0, 0, 0, 0, 0]}],
+    ['scrollUp', { name:'Scroll Up', coord: [0, 0, 0, 0, 0]}],
+    ['scrollDown', { name:'scrollDown', coord: [0, 0, 0, 0, 0]}],
+    ['middleClick', { name:'middleClick', coord: [0, 0, 0, 0, 0]}],
+
+])
 
 export const keys = reactive({
     layout: new Map<string,Key>()

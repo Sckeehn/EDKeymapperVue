@@ -1,7 +1,7 @@
 import { XMLParser } from 'fast-xml-parser'
 import { cache,Keybinds,Toggle,Bind,Slider, Dropdown } from './types'
 import { Settings, Weirdos } from "./ControlsList"
-import { selection, keys, defaultUS } from './keyboardMaps'
+import { selection, keys, defaultUS, mouseMap } from './keyboardMaps'
 
 export function loadKeybinds (file:string) {
     const option = {
@@ -20,9 +20,12 @@ export function loadKeybinds (file:string) {
         cache.layout = parsed.Root[keybind]
         if(parsed.Root[keybind].includes('US')){
         //copy defaultUS values to keys.layout, not reference
-        for(const [key,val] of defaultUS){
-            keys.layout.set(key,defaultUS.get(key)!)
-        }
+            for(const [key,val] of defaultUS){
+                keys.layout.set(key,defaultUS.get(key)!)
+            }
+            for(const [key, val] of mouseMap){
+                keys.layout.set(key, mouseMap.get(key)!)
+            }
         }else{
         console.log("Unknown layout")
         }
