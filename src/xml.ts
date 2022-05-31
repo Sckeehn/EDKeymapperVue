@@ -20,15 +20,11 @@ export function loadKeybinds (file:string) {
         cache.layout = parsed.Root[keybind]
         if(parsed.Root[keybind].includes('US')){
         //copy defaultUS values to keys.layout, not reference
-            for(const [key,val] of defaultUS){
-                keys.layout.set(key,defaultUS.get(key)!)
-            }
-            for(const [key, val] of mouseMap){
-                keys.layout.set(key, mouseMap.get(key)!)
-            }
+            keys.layout = new Map(defaultUS)
         }else{
-        console.log("Unknown layout")
+            console.log("Unknown layout")
         }
+        keys.mouse = new Map(mouseMap)
         continue
     }
     let category = new Keybinds(keybind)
@@ -36,13 +32,13 @@ export function loadKeybinds (file:string) {
     if(parsed.Root[keybind]["Value"]!=undefined){
         let value = parsed.Root[keybind]["Value"]
         if(Weirdos.has(keybind)){
-        category.addAction(new Dropdown(keybind, value))
+            category.addAction(new Dropdown(keybind, value))
         } else if(!isNaN(value) && value.toString().indexOf('.') != -1){
-        category.addAction(new Slider(keybind,value))
+            category.addAction(new Slider(keybind,value))
         } else if(!isNaN(value)){
-        category.addAction(new Toggle(keybind,value))
+            category.addAction(new Toggle(keybind,value))
         } else {
-        category.addAction(new Bind(keybind,"Mouse",value))
+            category.addAction(new Bind(keybind,"Mouse",value))
         }
     }else{
         for(const subkeybind in parsed.Root[keybind]){
@@ -54,13 +50,13 @@ export function loadKeybinds (file:string) {
             subcat.addAction(new Bind(subkeybind,device,key))
         }else{
             if(Weirdos.has(keybind)){
-            category.addAction(new Dropdown(subkeybind, value))
+                category.addAction(new Dropdown(subkeybind, value))
             } else if(!isNaN(value) && value.toString().indexOf('.') != -1){
-            subcat.addAction(new Slider(subkeybind,value))
+                subcat.addAction(new Slider(subkeybind,value))
             } else if(!isNaN(value)){
-            subcat.addAction(new Toggle(subkeybind,value))
+                subcat.addAction(new Toggle(subkeybind,value))
             } else {
-            subcat.addAction(new Bind(subkeybind,"Mouse",value))
+                subcat.addAction(new Bind(subkeybind,"Mouse",value))
             }
         }
         category.addSection(subcat)
@@ -79,6 +75,9 @@ export function resetKeys() {
       }
     }else{
       console.log("Unknown layout")
+    }
+    for(const [key,val] of keys.mouse){
+        val.coord[4] = 0
     }
 }
 

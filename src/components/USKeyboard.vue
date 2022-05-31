@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref,reactive, readonly } from 'vue'
-import { keys, Key, selection, currentKeys } from "../keyboardMaps"
+import { keys, Key, selection } from "../keyboardMaps"
 
 defineProps<{ msg:string }>();
 
@@ -37,8 +37,5 @@ function unhoverKey(event:any){
             {{key.name}}
         </button>
         <div :class="'keyWidth-'+key.coord[1]"></div>
-    </div>
-    <div v-if="hoverActions.is_hover == true">
-    {{ currentKeys.get(hoverActions.hover_element) }}
     </div>
 </template>

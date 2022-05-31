@@ -135,10 +135,6 @@ export const mouseMap = new Map([
 ])
 
 export const keys = reactive({
-    layout: new Map<string,Key>()
+    layout: new Map<string,Key>(),
+    mouse: new Map<string,Key>(),
 })
-
-export const currentKeys:Map<string, string> = new Map([
-
-    
-])
